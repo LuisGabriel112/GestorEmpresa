@@ -6,7 +6,7 @@ public class Empleadop {
     int tiempoEnEmpresa;
     String cargo;
     float sueldo;
-    int IdDeEmpleado;
+    String IdDeEmpleado;
 
     public int getEdad() {
         return edad;
@@ -48,11 +48,11 @@ public class Empleadop {
         this.sueldo = sueldo;
     }
 
-    public int getIdDeEmpleado() {
+    public String getIdDeEmpleado() {
         return IdDeEmpleado;
     }
 
-    public void setIdDeEmpleado(int idDeEmpleado) {
+    public void setIdDeEmpleado(String idDeEmpleado) {
         IdDeEmpleado = idDeEmpleado;
     }
 
