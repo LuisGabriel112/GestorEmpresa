@@ -8,6 +8,8 @@ public class Empleadop {
     float sueldo;
     String IdDeEmpleado;
 
+    int numero = 0;
+
     public int getEdad() {
         return edad;
     }
@@ -48,13 +50,6 @@ public class Empleadop {
         this.sueldo = sueldo;
     }
 
-    public String getIdDeEmpleado() {
-        return IdDeEmpleado;
-    }
-
-    public void setIdDeEmpleado(String idDeEmpleado) {
-        IdDeEmpleado = idDeEmpleado;
-    }
 
     public String Creaids(){
         Random rnd = new Random();
@@ -69,7 +64,6 @@ public class Empleadop {
             id = id.concat(idsL);
             id = id.concat(nums);
         }
-        System.out.println("#"+id);
         return id;
     }
 }

@@ -1,10 +1,11 @@
-public class Gestion extends Empleadop{
+public class Gestion extends EmpresaG{
     public Gestion(String nombre,String IdDeEmpleado,int edad, String cargo){
         this.nombre = nombre;
         this.IdDeEmpleado = IdDeEmpleado;
         this.edad = edad;
         this.cargo = cargo;
     }
+
     public String getNombre(){
         return nombre;
     }
@@ -37,15 +38,17 @@ public class Gestion extends Empleadop{
         this.cargo = cargo;
     }
 
+
     @Override
     public String toString() {
-        return "Empleado{" + "\n"+
-                "edad=" + edad + "\n"+
-                " nombre='" + nombre + "\n" +
-                " tiempoEnEmpresa=" + tiempoEnEmpresa + "\n"+
-                " cargo='" + cargo + "\n" +
-                " sueldo=" + sueldo + "\n"+
-                " IdDeEmpleado=" + IdDeEmpleado + "\n"+
-                '}';
+        return "=============================================" + "\n" +
+                "Empleado num: "+ numero+
+                "{" + "\n"+
+                "edad: " + edad + "\n"+
+                " nombre: " + nombre + "\n" +
+                " tiempo En Empresa: " + tiempoEnEmpresa + "\n"+
+                " cargo: " + cargo + "\n" +
+                " sueldo: " + sueldo + "\n"+
+                " IdDeEmpleado: " +"#" + getIdDeEmpleado();
     }
 }
