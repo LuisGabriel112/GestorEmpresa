@@ -5,8 +5,18 @@ public class Empleadop {
     String nombre;
     int tiempoEnEmpresa;
     String cargo;
-    float sueldo;
+    double sueldo;
     String IdDeEmpleado;
+
+    double JefeSueldo = 10000.00;
+
+    double subjefeSueldo = 1000.00;
+
+    double gerenteSueldo = 950.00;
+
+    double maquinistaSueldo = 800.00;
+
+    double intendenteSueldo = 400.00;
 
     int numero = 0;
 
@@ -42,7 +52,7 @@ public class Empleadop {
         this.cargo = cargo;
     }
 
-    public float getSueldo() {
+    public double getSueldo() {
         return sueldo;
     }
 

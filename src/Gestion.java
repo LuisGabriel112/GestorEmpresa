@@ -1,9 +1,10 @@
 public class Gestion extends EmpresaG{
-    public Gestion(String nombre,String IdDeEmpleado,int edad, String cargo){
+    public Gestion(String nombre,double sueldo,String IdDeEmpleado,int edad, String cargo){
         this.nombre = nombre;
         this.IdDeEmpleado = IdDeEmpleado;
         this.edad = edad;
         this.cargo = cargo;
+        this.sueldo = sueldo;
     }
 
     public String getNombre(){
@@ -12,6 +13,14 @@ public class Gestion extends EmpresaG{
 
     public void setNombre(String nombre){
         this.nombre = nombre;
+    }
+
+    public double getSueldo(){
+        return sueldo;
+    }
+
+    public void setSueldo(double sueldo){
+        this.sueldo = sueldo;
     }
 
     public String getIdDeEmpleado(){
@@ -41,14 +50,12 @@ public class Gestion extends EmpresaG{
 
     @Override
     public String toString() {
-        return "=============================================" + "\n" +
-                "Empleado num: "+ numero+
-                "{" + "\n"+
+        return"\n" +"=============================================" + "\n" +
                 "edad: " + edad + "\n"+
                 " nombre: " + nombre + "\n" +
                 " tiempo En Empresa: " + tiempoEnEmpresa + "\n"+
                 " cargo: " + cargo + "\n" +
-                " sueldo: " + sueldo + "\n"+
+                " sueldo: $" + sueldo + "\n"+
                 " IdDeEmpleado: " +"#" + getIdDeEmpleado();
     }
 }
